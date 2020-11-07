@@ -1,0 +1,14 @@
+.footer {
+    position:fixed;
+    bottom:0;
+    clear:both;
+    width:100%;
+}
+.vehiculos-image{
+    width: 80%;
+}
+.footer-content {
+    color: #ffffff;
+    background-color: #13ce66;
+    padding: 1.5rem 0;
+}
