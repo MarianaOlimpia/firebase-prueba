@@ -14,7 +14,10 @@ const NewComment = () => {
         content: ''
     })
     const resetStateComment = {
-        email: currentUser.email,
+        email: currentUser.email, 
+        uid: currentUser.uid,
+        deleted: false,
+        deletedBy: '',
         content: ''
     }
 
