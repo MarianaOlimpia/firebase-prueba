@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/firebase-prueba/static/css/main.6c04c699.chunk.css",
+    "main.js": "/firebase-prueba/static/js/main.77b49b84.chunk.js",
+    "main.js.map": "/firebase-prueba/static/js/main.77b49b84.chunk.js.map",
+    "runtime-main.js": "/firebase-prueba/static/js/runtime-main.f7b27927.js",
+    "runtime-main.js.map": "/firebase-prueba/static/js/runtime-main.f7b27927.js.map",
+    "static/css/2.83342f34.chunk.css": "/firebase-prueba/static/css/2.83342f34.chunk.css",
+    "static/js/2.5de30113.chunk.js": "/firebase-prueba/static/js/2.5de30113.chunk.js",
+    "static/js/2.5de30113.chunk.js.map": "/firebase-prueba/static/js/2.5de30113.chunk.js.map",
+    "static/js/3.4d18bd4a.chunk.js": "/firebase-prueba/static/js/3.4d18bd4a.chunk.js",
+    "static/js/3.4d18bd4a.chunk.js.map": "/firebase-prueba/static/js/3.4d18bd4a.chunk.js.map",
+    "index.html": "/firebase-prueba/index.html",
+    "static/css/2.83342f34.chunk.css.map": "/firebase-prueba/static/css/2.83342f34.chunk.css.map",
+    "static/css/main.6c04c699.chunk.css.map": "/firebase-prueba/static/css/main.6c04c699.chunk.css.map",
+    "static/js/2.5de30113.chunk.js.LICENSE.txt": "/firebase-prueba/static/js/2.5de30113.chunk.js.LICENSE.txt",
+    "static/media/Vehiculos.d0b84cbb.svg": "/firebase-prueba/static/media/Vehiculos.d0b84cbb.svg",
+    "static/media/borrar.3ef1c6cb.svg": "/firebase-prueba/static/media/borrar.3ef1c6cb.svg",
+    "static/media/logout.5b97c8d0.svg": "/firebase-prueba/static/media/logout.5b97c8d0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7b27927.js",
+    "static/css/2.83342f34.chunk.css",
+    "static/js/2.5de30113.chunk.js",
+    "static/css/main.6c04c699.chunk.css",
+    "static/js/main.77b49b84.chunk.js"
+  ]
+}
