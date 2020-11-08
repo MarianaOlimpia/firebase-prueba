@@ -43,3 +43,8 @@
         text-align: initial;
     }
 }
+@media (max-height: 420px) {
+    .vehiculos-image {
+        display: none;
+    }
+}
