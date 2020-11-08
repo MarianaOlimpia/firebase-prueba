@@ -4,8 +4,9 @@ import '../assets/styles/Footer.css';
 const Footer = ({log}) => {
     return ( 
         <div className='footer'>
-        {log && <img src={image} alt='vehiculos' className='vehiculos-image' />}
+        {log && <div className='vehiculos-image'><img src={image} alt='vehiculos' /></div>}
             <div className='footer-content'>
+                <span>Mariana Olimpia Perez Ruiz</span>
                 <a 
                     href='https://marianaolimpia.github.io/portafolio/' 
                     target="_blank" 

@@ -2,11 +2,15 @@ import { useState } from 'react';
 import {db} from '../firebase/firebaseConfig';
 import '../assets/styles/Comments.css';
 import { useAuth } from '../AuthContext';
+import { commentSuccess } from './Notifications';
 
 const NewComment = () => {
     const { currentUser } = useAuth();
     const [comment, setComment] = useState({
         email: currentUser.email, 
+        uid: currentUser.uid,
+        deleted: false,
+        deletedBy: '',
         content: ''
     })
     const resetStateComment = {
@@ -15,9 +19,9 @@ const NewComment = () => {
     }
 
     const saveComment = async () => {
-        comment.fecha = Date.now();
+        comment.timestamp = Date.now();
         await db.collection('comments').doc().set(comment);
-        alert('Comentario guardado con éxito')
+        commentSuccess();
         setComment({ ...resetStateComment });
     }
 
@@ -25,7 +29,7 @@ const NewComment = () => {
         <div className='comment-container'>
             <h2>Nuevo comentario</h2>
             <textarea 
-                placeholder='Escribe aquí tu comentario' 
+                placeholder='Escribe aquí tu comentario...' 
                 value={comment.content} 
                 onChange={e=> setComment({...comment, content: e.target.value})}
             />

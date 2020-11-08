@@ -4,21 +4,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 .form input {
+    margin: 0.6rem 0;
     width: 65%;
     border: solid rgb(235 237 240);
     border-radius: 2rem;
     height: 2rem;
+    text-align: center;
 }
 .form input::placeholder {
     color: rgb(168 179 193);
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 .form a {
+    margin-top: 5px;
+    font-size: 13px;
     text-decoration: none;
     color: rgb(0 166 255);
     font-weight: bold;
+}
+.error-msg {
+    background-color: rgba(215, 44, 44, 0.7);
+    padding: 0.5rem;
+    width: 70%;
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 50%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 }

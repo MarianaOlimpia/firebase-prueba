@@ -19,7 +19,7 @@ const Form = ({register, login}) => {
           await loginAuth(email, password)
           history.push("/home")
         } catch {
-          setError("Failed to log in")
+          setError("No se pudo iniciar sesión, por favor valida los datos ingresados")
         }
         setLoading(false)
     }
@@ -30,16 +30,16 @@ const Form = ({register, login}) => {
           setError("")
           setLoading(true)
           await signup(email, password)
-          history.push("/")
+          history.push("/home")
         } catch {
-          setError("Failed to create an account")
+          setError("Hubo un error al intentar el registro, por favor valida los datos ingresados")
         }
         setLoading(false)
       }
 
     return ( 
         <form className='form'>
-            {error && <div>{error}</div>}
+            {error && <div className='error-msg'>{error}</div>}
             <input type='email' placeholder='Correo electrónico' onChange={e => setEmail(e.target.value)} />
             <input type='password' placeholder='Contraseña' onChange={e => setPassword(e.target.value)} />
             {register ? 

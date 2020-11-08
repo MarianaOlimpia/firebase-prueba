@@ -5,10 +5,41 @@
     width:100%;
 }
 .vehiculos-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.vehiculos-image img {
     width: 80%;
 }
 .footer-content {
     color: #ffffff;
+    font-size: 10px;
     background-color: #13ce66;
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
+}
+.footer-content span {
+    display: none;
+}
+.footer-content a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (min-width: 426px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 14px;
+    }
+    .footer-content span {
+        display: block;
+    }
+    .vehiculos-image{
+        width: 55%;
+        position: relative;
+        text-align: initial;
+    }
 }

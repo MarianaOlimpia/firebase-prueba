@@ -2,10 +2,12 @@
   text-align: center;
 }
 button {
-  width: 50%;
+  width: 40%;
   color: #ffffff;
-  font-size: 1.2rem;
-  padding: 0.7rem 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  padding: 0.7rem 1rem;
   background: rgb(0 166 255);
   border: none;
   border-radius: 2rem;
